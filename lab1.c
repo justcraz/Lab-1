@@ -1,27 +1,28 @@
-#include <stdio.h>//підключення бібліотек
+
+#include <stdio.h>//pidklucenna bibliotek
 #include<math.h>
 int main() {
-    float x1, x2, x3, y1, y2, y3, p, s; //Оголошуємо змінні
+    float x1, x2, x3, y1, y2, y3, p, s; //ogoloshyemo zminni
     
-    printf("Введіть координати першої точки:\n"); //Введення чисел
-    printf("Введіть x1: ");
-    scanf("%f", &x1); //Введення даних
+    printf("Vedenia kordinati pershoi tocki:\n"); //Vedennia chisel
+    printf("Vvedit x1: ");
+    scanf("%f", &x1); //Vedenia danih
     
-    printf("Введіть y1: ");
+    printf("Vvedit y1: ");
     scanf("%f", &y1);
 
-    printf ("\n Введіть координати другої точки:\n");
-    printf("Введіть x2: ");
+    printf ("\n Vedenia kordinati drugoi tocki:\n");
+    printf("Vvedit x2: ");
     scanf("%f", &x2);
     
-    printf("Введіть y2: ");
+    printf("Vvedit y2: ");
     scanf("%f", &y2);
     
-    printf("\n Введіть координати третьої точки: \n");
-    printf("Введіть x3: ");
+    printf("\nVedenia kordinati tretioi tocki: \n");
+    printf("Vvedit x3: ");
     scanf("%f", &x3);
     
-    printf("Введіть y3: ");
+    printf("Vvedit y3: ");
     scanf("%f", &y3);
     
     float ab = sqrt (pow (x2 - x1, 2) + pow(y2 - y1, 2));
@@ -31,14 +32,14 @@ int main() {
     float pp = p / 2;
     s = sqrt (pp * (pp - ac) * (pp - bc) * (pp - ab));
     
-    printf("\n***Результат***\n");
+    printf("\n***Rezultat***\n");
     
-    printf("\n Сторона AB = %2.f\n", ab );
-    printf("Сторона AC = %2.f\n", ac );
-    printf("Сторона BC = %2.f\n", bc );
+    printf("\n Storona AB = %2.f\n", ab );
+    printf("Storona AC = %2.f\n", ac );
+    printf("Storona BC = %2.f\n", bc );
     
-    printf("\n Площа S = %2.f \n", s);
-    printf("Периметр P = %2.f", p);
+    printf("\n Ploscha S = %2.f \n", s);
+    printf("Perimetr P = %2.f", p);
     
     return 0;
   }
